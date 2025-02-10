@@ -1,11 +1,25 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/vGvjdUKD)
-# tJavaModule02fall25
-tJavaModule02fall25
+//1.Reverse_String
 
-Code up these three programs and submit your source code (*.java) to your GitHub Classroom remote repo.
+import java.util.Scanner;
 
-1) ReversedStrings.java - You will create a simple program that takes a user's input string and reverses it. For example, if the user inputs "hello", the program will output "olleh".
+public class Main {
 
-2) MaddnessWithMethods.java -  You will explore the use of functions in Java. You will create a program that involves three distinct functions: getAnIntFromTheUser, compareTwoInts, and sumTwoInts. The program will demonstrate how functions can be used to break down a problem into smaller, manageable parts.
+    public static void main(String[] args) {
 
-3) LargestOfThree.java - This program, titled "LargestOfThree.java" is designed to help you understand conditional statements in Java. Your task is to write a program that asks the user for three integers, determines the largest among them using nested if statements, and outputs the largest integer.
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Type in a String");
+        String input = sc.nextLine();
+        String reverseString = new StringBuilder(input).reverse().toString();
+        System.out.println("Done");
+        System.out.println("The reversed string is: " + reverseString);
+        
+        }
+
+    }
+
+
+//2. Maddness_Method
+
+
+
+
