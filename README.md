@@ -64,6 +64,43 @@ public class Main {
 
 //3.LargestOfThree.java
 
+import java.util.Scanner;
+
+public class Main {
+
+
+    public static void main(String[] args) {
+        int first = getAnIntFromTheUser("Type the first integer: ");
+        int second = getAnIntFromTheUser("Type the second integer: ");
+        int third = getAnIntFromTheUser("Type the third integer: ");
+
+        int comparisonResult = compareThreeInts(first, second, third);
+
+        if (comparisonResult == 1) {
+            System.out.println(first + " is the greatest number");
+        } else if (comparisonResult > 1) {
+            System.out.println(second + " is the greatest numeber");
+        } else {
+            System.out.println(third + " is the greatest numeber");
+        }
+    }
+    public static int getAnIntFromTheUser(String prompt) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(prompt);
+        int Inte = sc.nextInt();
+        return Inte;
+    }
+    public static int compareThreeInts(int a, int b, int c) {
+        if (a > b && a > c) {
+            return 1;
+        } else if (b > a && b > c) {
+            return 2;
+        } else {
+            return 0;
+        }
+    }
+}
+
 
 
 
